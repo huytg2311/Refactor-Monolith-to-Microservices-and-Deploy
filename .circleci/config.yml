@@ -38,7 +38,7 @@ jobs:
 
             echo " ------- login in to hub--------"
 
-            cat ~/my_password.txt | docker login -- henry2311 foo --password-stdin
+            docker login -u henry2311 --password-stdin $DOCKERPASS
 
             echo "-------------- Pushing images to dockerhub-------"
 
